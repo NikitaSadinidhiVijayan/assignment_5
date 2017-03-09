@@ -9,9 +9,8 @@ QUnit.test('check datastore', function(assert) {
     ds.add('m@bond.com', 'tea');
     ds.add('james@bond.com', 'eshpressho');
     //assert.equal(ds.add('m@bond.com', 'tea'), undefined);
-    assert.equal(ds.add('james@bond.com', 'eshpressho'), undefined);
-    assert.ok(ds.getAll(), 'returns value');
-    //assert.equal(ds.getAll(), 'returns value');
+    ds.add('james@bond.com', 'eshpressho');
+
     assert.deepEqual(ds.getAll(), {
         'm@bond.com': 'tea',
         'james@bond.com': 'eshpressho'
