@@ -7,6 +7,7 @@
         this.db = db;
     }
 
+// to handle console.log function
     function consoleprint(str) {
         console.log(str);
         return str;

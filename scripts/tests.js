@@ -1,7 +1,8 @@
 /*global QUnit */
 /*
 The issue is with console.log function when trying to run Qunit test scripts on truck.js
-To avoid this problem, i have created a seperate function for handling the console.log
+To avoid this problem, i have created a seperate function called 'consoleprint' for
+handling the console.log undefined 
 This function returns the string which it supposed to print.
 */
 QUnit.test('check datastore', function(assert) {
